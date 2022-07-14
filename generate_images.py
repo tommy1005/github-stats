@@ -115,7 +115,7 @@ async def main() -> None:
         {x.strip() for x in exclude_langs.split(",")} if exclude_langs else None
     )
     # Convert a truthy value to a Boolean
-    raw_ignore_forked_repos = True; # os.getenv("EXCLUDE_FORKED_REPOS")
+    raw_ignore_forked_repos = 'true'; # os.getenv("EXCLUDE_FORKED_REPOS")
     ignore_forked_repos = (
         not not raw_ignore_forked_repos
         and raw_ignore_forked_repos.strip().lower() != "false"

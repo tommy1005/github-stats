@@ -77,10 +77,11 @@ async def generate_languages(s: Stats) -> None:
 viewBox="0 0 16 16" version="1.1" width="16" height="16"><path
 fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8z"></path></svg>
 <span class="lang">{lang}</span>
-<span class="percent">{data.get("prop", 0):0.2f}%</span>
+<span class="percent"></span>
 </li>
 
 """
+# <span class="percent">{data.get("prop", 0):0.2f}%</span>
 
     output = re.sub(r"{{ progress }}", progress, output)
     output = re.sub(r"{{ lang_list }}", lang_list, output)

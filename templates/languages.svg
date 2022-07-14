@@ -131,7 +131,7 @@ div.ellipsis {
 <h2>Languages Used (By File Size)</h2>
 
 <div>
-<span class="progress">
+<span class="progress" style="display:none;">
 {{ progress }}
 </span>
 </div>

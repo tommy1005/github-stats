@@ -111,7 +111,7 @@ async def main() -> None:
     excluded_repos = (
         {x.strip() for x in exclude_repos.split(",")} if exclude_repos else None
     )
-    exclude_langs = 'html,css,less,tsql,scss,hack,sqlpl,xslt,batchfile,vcl,PLpgSQL' # os.getenv("EXCLUDED_LANGS")
+    exclude_langs = 'html,css,less,tsql,scss,hack,sqlpl,xslt,batchfile,vcl,PLpgSQL,scala,freemarker' # os.getenv("EXCLUDED_LANGS")
     excluded_langs = (
         {x.strip() for x in exclude_langs.split(",")} if exclude_langs else None
     )
